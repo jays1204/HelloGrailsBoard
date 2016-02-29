@@ -7,4 +7,6 @@ class Board {
 
     static constraints = {
     }
+
+    static belongsTo = [user: User]
 }
