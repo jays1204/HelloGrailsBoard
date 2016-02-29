@@ -1,3 +1,6 @@
 .idea
 *.iml
 target/
+.slcache
+
+/web-app/WEB-INF/classes
