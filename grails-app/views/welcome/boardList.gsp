@@ -8,11 +8,15 @@
 <body>
 <div class="content">
     게시물들
+
     <ol>
     <% boardItemList.each { %>
         <li> ${it.title} | 쓴날 : ${it.create_date} </li>
    <%  } %>
     </ol>
+    <div class="buttonbox">
+        <button><a href="/board/writepage">go</a></button>
+    </div>
 </div>
 
 </body>

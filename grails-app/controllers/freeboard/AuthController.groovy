@@ -17,7 +17,7 @@ class AuthController {
             def validateUser = authService.validateUserPwdInfo(username, password)
 
             HttpSession session = request.getSession()
-            session.setAttribute("name", validateUser.getUsername())
+            session.setAttribute("username", validateUser.getUsername())
             redirect(controller: "Welcome", action: "index")
         } else {
             redirect(action: "/404")
